@@ -1,0 +1,5 @@
+mgmttf/.terraform.lock.hcl
+mgmttf/terraform.tfstate
+mgmttf/terraform.tfstate.backup
+mgmttf/.terraform/providers/registry.terraform.io/hashicorp/azurerm/2.90.0/windows_amd64/terraform-provider-azurerm_v2.90.0_x5.exe
+mgmttf/terraform.tfvars

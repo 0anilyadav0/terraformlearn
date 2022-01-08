@@ -1,0 +1,24 @@
+rm -Recurse -Force -Path .terraform*
+rm -Recurse -Force -Path terraform.tfstate*
+rm *.txt
+file("${path.module}/sshkey/sshkeys")
+filebase64("${path.module}/script/redhat-webvm-script.sh")
+fileexists("${path.module}/sshkey/sshkeys")
+terraform validate
+terraform plan
+terraform apply
+terraform destroy -auto-approve
+terraform apply -refresh-only
+terraform console
+terraform refresh
+terraform init -upgrade
+terraform fmt
+terraform taint resourcename.localname
+terraform plan -out=path
+terraform plan -target=ec2
+terraform plan -refresh = false
+terraform workspace -h 
+terraform state
+count
+count.index
+
